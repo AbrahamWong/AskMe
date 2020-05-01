@@ -1,0 +1,14 @@
+<h2>Search result for: <?php echo $searched; ?></h2>
+
+<?php 
+    foreach ($questions as $question) { ?>
+        <div class="card my-2">
+            <a <?php echo 'href="/question/read/' . $question->question_id . '"'; ?> 
+                class="card-body px-4 text-muted text-reset" style="text-decoration: none">
+                <h5><?php echo $question->question_title; ?></h5>
+                <p><?php echo $question->question_content; ?></p>
+            </a>
+        </div>
+<?php
+    }
+?>

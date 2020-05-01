@@ -1,0 +1,18 @@
+<h1>Ask a Question Here!</h1>
+
+<?php echo $this->tag->form("question/submit"); ?>
+
+    <div class="form-group">
+        <label for="email">Title</label>
+        <?php echo $this->tag->textField(["question_title", 'class' => 'form-control']); ?>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Question</label>
+        <?php echo $this->tag->textField(["question_content", 'class' => 'form-control']); ?>
+    </div>
+
+    <div>
+        <?php echo $this->tag->submitButton(["Register", 'class' => 'my-3 btn btn-primary']); ?>
+    </div>
+</form>

@@ -1,0 +1,18 @@
+<h1>Edit Profile</h1>
+
+<?php echo $this->tag->form("profile/$user->id"); ?>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <?php
+        echo $this->tag->textField([
+            "name", 
+            'class' => 'form-control', 
+            'value' => $user->name
+        ]); ?>
+    </div>
+
+    <div>
+        <?php echo $this->tag->submitButton(["Edit", 'class' => 'my-3 btn btn-primary']); ?>
+    </div>
+</form>

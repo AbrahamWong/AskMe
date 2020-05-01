@@ -1,0 +1,21 @@
+<div class="row justify-content-between my-3">
+    <h2>Profile</h2>
+    <?php echo "<form action='/profile/" . $user->id . "/edit'>"; ?>
+        <button type="submit" class="btn btn-primary">Edit Profile</button>
+    </form>
+</div>
+
+<p>Name:</p>
+<h5><?php echo $user->name; ?></h5>
+
+<br>
+<p>Email:</p>
+<h5><?php echo $user->email; ?></h5>
+
+<br>
+<p>Account created at:</p>
+<h5><?php echo $account_created; ?></h5>
+
+<br>
+<p>Questions answered:</p>
+<h5><?php echo $user->answered_question; ?></h5>
